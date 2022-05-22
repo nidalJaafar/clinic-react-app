@@ -1,0 +1,15 @@
+$whiteColor: white;
+$blackColor: black;
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-title {
+  padding: .5em;
+  background-color: $blackColor;
+  color: $whiteColor;
+  font-family: Lora;
+}

@@ -1,0 +1,37 @@
+$mainColor: #0ba39c;
+$blackColor: black;
+$hoverColor: #1cc4bc;
+
+.nav-container {
+	display: flex;
+  padding: 1em;
+	flex-direction: column;
+}
+
+.nav-image {
+	max-width: 60%;
+	align-self: center;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: $blackColor;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 0.5rem 2rem;
+	text-transform: uppercase;
+	font-family: Poppins;
+
+	&:hover {
+		color: $hoverColor;
+	}
+}

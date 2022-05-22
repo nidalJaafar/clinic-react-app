@@ -1,0 +1,47 @@
+$mainColor: #0ba39c;
+@mixin inline {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+  margin: 0 1em;
+  color: transparent;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.copy-rights {
+  margin-left: 1em;
+  font-family: Lora;
+  a {
+    font-family: Lora;
+    text-decoration: none;
+    color: $mainColor;
+  }
+}
+
+.twitter-link {
+	background-image: url('../../assets/twitterlight.svg');
+	@include inline;
+	&:hover {
+		background-image: url('../../assets/twitterdark.svg');
+	}
+}
+.fb-link {
+	background-image: url('../../assets/fblight.svg');
+	@include inline;
+	&:hover {
+		background-image: url('../../assets/fbdark.svg');
+	}
+}
+.insta-link {
+	background-image: url('../../assets/instalight.svg');
+	@include inline;
+	&:hover {
+		background-image: url('../../assets/instadark.svg');
+	}
+}
