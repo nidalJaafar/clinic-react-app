@@ -51,18 +51,20 @@ $hoverColor: #1cc4bc;
 	}
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 642px) {
 	.content::before{
     content: '';
     background-image: url('../../assets/main.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    min-width: 85vmin;
+    aspect-ratio: 2;
   }
   
   .container {
 		background-image: none;
+    justify-content: center;
 	}
 
   .content {
