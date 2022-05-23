@@ -6,10 +6,12 @@ const Banner = () => {
 		<div className="container">
 			<div className="content">
 				<h2 className="title">Title goes here</h2>
-				<p className="details">bla bla bla bla bla bla</p>
-				<p className="details">bla bla bla bla bla bla bla bla</p>
-				<p className="details">bla bla bla</p>
-				<Link to="/blog" className="read-more">read more</Link>
+				<p className="details">sample description</p>
+				<p className="details">sample description</p>
+				<p className="details">sample description</p>
+				<Link to="/blog" className="read-more">
+					read more
+				</Link>
 			</div>
 		</div>
 	)

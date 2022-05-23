@@ -13,7 +13,7 @@ const Navigation = ({ selected }) => {
 	const [render, setRender] = useState(window.innerWidth > 479)
 	return (
 		<div className="nav-container">
-			<img src={Logo} alt="Jana's Clinic" className="nav-image" />
+			<img src={Logo} alt="logo" className="nav-image" />
 
 			<button
 				className="mobile-menu"
