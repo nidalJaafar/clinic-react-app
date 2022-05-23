@@ -4,44 +4,68 @@ $mainColor: #0ba39c;
 $hoverColor: #1cc4bc;
 
 .container {
-  background-image: url("../../assets/jana-modified.png");
-  display: flex;
-  justify-content: flex-end;
-  background-size: contain;
+	background-image: url('../../assets/main.jpg');
+	display: flex;
+	justify-content: flex-end;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .content {
-  margin: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-right: 12em;
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-right: 12em;
 }
 
 .title {
-  background-color: $whiteColor;
-  padding: .5em;
-  text-transform: uppercase;
-  font-family: Lora;
-  font-size: 1.75em;
+	background-color: $whiteColor;
+	padding: 0.5em;
+	text-transform: uppercase;
+	font-family: Lora;
+	font-size: 1.75em;
 }
 
 .details {
-  background-color: $blackColor;
-  color: $whiteColor;
-  font-size: 1.5em;
-  padding: .5em;
-  font-family: Poppins;
+	background-color: $blackColor;
+	color: $whiteColor;
+	font-size: 1.5em;
+	padding: 0.5em;
+	font-family: Poppins;
 }
 
 .read-more {
-  padding: 1em;
-  background-color: $mainColor;
-  color: $whiteColor;
-  text-transform: uppercase;
-  border: none;
-  &:hover {
-    background-color: $hoverColor;
-    cursor: pointer;
+	text-decoration: none;
+	background-color: $mainColor;
+	color: $whiteColor;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: Poppins;
+	padding: 0.5em;
+	&:hover {
+		background-color: $hoverColor;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.content::before{
+    content: '';
+    background-image: url('../../assets/main.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .container {
+		background-image: none;
+	}
+
+  .content {
+    padding: 0;
   }
 }

@@ -4,7 +4,7 @@ $hoverColor: #1cc4bc;
 
 .nav-container {
 	display: flex;
-  padding: 1em;
+	padding: 1em;
 	flex-direction: column;
 }
 
@@ -33,5 +33,34 @@ $hoverColor: #1cc4bc;
 
 	&:hover {
 		color: $hoverColor;
+	}
+}
+
+.selected {
+	color: $hoverColor;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+@media screen and (max-width: 479px) {
+	.links-container {
+		display: none;
+		flex-direction: column;
+	}
+  .show {
+    display: flex;
+  }
+	.mobile-menu {
+		display: block;
+		align-self: flex-start;
+		background-image: url('../../assets/mobile-menu.png');
+		height: 50px;
+		width: 50px;
+		border: none;
+    &:hover {
+      opacity: 90%;
+    }
 	}
 }

@@ -1,13 +1,16 @@
 import BlogThumbnail from '../../components/blog-thumbnail/blog-thumbnail.component'
+import Navigation from '../../components/nav/nav.component'
 import './blog.styles.scss'
 const Blog = () => {
 	return (
-		<div className="blog-container">
-			<h1 className="blog-title">Blog</h1>
-			<BlogThumbnail/>
-			<BlogThumbnail/>
-			<BlogThumbnail/>
-    </div>
+		<>
+			<Navigation selected="blog" />
+			<div className="blog-container">
+				<BlogThumbnail />
+				<BlogThumbnail />
+				<BlogThumbnail />
+			</div>
+		</>
 	)
 }
 

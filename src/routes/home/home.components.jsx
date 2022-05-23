@@ -1,9 +1,12 @@
-import {Outlet} from "react-router-dom";
-import Banner from '../../components/banner/banner.component'
+import Banner from '../../components/banner/banner.component';
+import Navigation from "../../components/nav/nav.component";
 
 const Home = () => {
-	return (
+  return (
+    <>
+      <Navigation selected="home" />
       <Banner />
+    </>
 	)
 }
 

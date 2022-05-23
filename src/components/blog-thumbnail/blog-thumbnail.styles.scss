@@ -2,50 +2,83 @@ $whiteColor: white;
 $blackColor: black;
 
 .blog-thumbnail-image {
-  max-width: 300px;
-  border: 1px solid $blackColor;
+	max-width: 400px;
+	width: 100%;
+	border: 1px solid $blackColor;
 }
 
 .blog-thumbnail-container {
-  display: flex;
-  margin: 1em;
+	display: flex;
+	margin: 1em;
 }
 
 .blog-thumbnail-content {
-  border: 1px solid $blackColor;
-  border-left: 0px;
-  width: 35em;
-  padding-left: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	border: 1px solid $blackColor;
+	border-left: 0px;
+	width: 35em;
+	max-height: 30em;
+	padding-left: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .blog-thumbnail-link {
-  text-decoration: none;
-  color: $blackColor;
-  font-family: Poppins;
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: .5em;
-  margin-bottom: .5em;
-  color: $whiteColor;
-  background-color: $blackColor;
-  border: 3px solid $blackColor;
-  
-  &:hover {
-    color: $blackColor;
-    background-color: $whiteColor;
-  }
+	text-decoration: none;
+	color: $blackColor;
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	color: $whiteColor;
+	background-color: $blackColor;
+	border: 3px solid $blackColor;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $blackColor;
+		background-color: $whiteColor;
+	}
 }
 
 .blog-thumbnail-title {
-  font-family: Lora;
-  font-size: 2em;
-  font-weight: bold;
+	font-family: Lora;
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .blog-thumbnail-description {
-  font-family: Poppins;
-  font-size: 1.1em;
+	font-family: Poppins;
+	font-size: 1.1em;
+	overflow: hidden;
+	white-space: wrap;
+	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 850px) {
+  .blog-thumbnail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blog-thumbnail-image {
+    max-width: 600px;
+    width: 100%;
+  }
+  .blog-thumbnail-content {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .blog-thumbnail-image {
+		max-width: 300px;
+	}
+  
+  .blog-thumbnail-content {
+    max-width: 300px;
+  }
 }

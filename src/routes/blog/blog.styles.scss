@@ -2,14 +2,15 @@ $whiteColor: white;
 $blackColor: black;
 
 .blog-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .blog-title {
-  padding: .5em;
-  background-color: $blackColor;
-  color: $whiteColor;
-  font-family: Lora;
+	margin: 0;
+	padding: 0.5em;
+	background-color: $blackColor;
+	color: $whiteColor;
+	font-family: Lora;
 }

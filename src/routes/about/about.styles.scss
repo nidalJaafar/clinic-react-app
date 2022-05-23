@@ -1,31 +1,24 @@
 $whiteColor: white;
 $blackColor: black;
 
-.about-container {
+.about-container, .single-blog-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-title {
-  font-family: Lora;
-  color: $whiteColor;
-  background-color: $blackColor;
-  text-transform: uppercase;
-  padding: .5em;
-}
-
-.about-image {
+.about-image, .single-blog-image {
   max-width: 700px;
+  width: 100%;
   border: 1px solid $blackColor;
 }
 
-.about-article-title {
+.about-article-title, .single-blog-title {
   text-transform: uppercase;
   font-family: Lora;
 }
 
-.about-article-content {
+.about-article-content, .single-blog-content {
   font-size: 1.1em;
   font-family: Poppins;
   text-align: center;

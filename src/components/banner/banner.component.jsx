@@ -1,14 +1,15 @@
+import {Link} from "react-router-dom";
 import './banner.styles.scss'
 
 const Banner = () => {
 	return (
 		<div className="container">
 			<div className="content">
-				<h2 className="title">bla bla bla bla bla bla</h2>
+				<h2 className="title">Title goes here</h2>
 				<p className="details">bla bla bla bla bla bla</p>
 				<p className="details">bla bla bla bla bla bla bla bla</p>
 				<p className="details">bla bla bla</p>
-				<button className="read-more">read more</button>
+				<Link to="/blog" className="read-more">read more</Link>
 			</div>
 		</div>
 	)
