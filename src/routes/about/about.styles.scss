@@ -1,6 +1,3 @@
-$whiteColor: white;
-$blackColor: black;
-
 .about-container, .single-blog-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +7,7 @@ $blackColor: black;
 .about-image, .single-blog-image {
   max-width: 700px;
   width: 100%;
-  border: 1px solid $blackColor;
+  border: 1px solid black;
 }
 
 .about-article-title, .single-blog-title {

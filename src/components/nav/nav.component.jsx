@@ -1,19 +1,26 @@
-import {Link} from "react-router-dom";
-import Logo from '../../assets/logo.png';
-import './nav.styles.scss';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Logo from '../../assets/logo.png'
+import './nav.styles.scss'
 
-const displayMenu = () => {
-  const menu = document.querySelector('.links-container');
-  menu.classList.toggle('show');
-}
+let listener
 
-const Navigation = ({selected}) => {
-  return (
-		<>
-			<div className="nav-container">
-				<img src={Logo} alt="Jana's Clinic" className="nav-image" />
-				<button className="mobile-menu" onClick={displayMenu}></button>
-        <div className="links-container">
+const Navigation = ({ selected }) => {
+	listener = () => {
+		if (window.innerWidth > 479) setRender(true)
+		else setRender(false)
+	}
+	const [render, setRender] = useState(window.innerWidth > 479)
+	return (
+		<div className="nav-container">
+			<img src={Logo} alt="Jana's Clinic" className="nav-image" />
+
+			<button
+				className="mobile-menu"
+				onClick={() => setRender(!render)}
+			></button>
+			{render ? (
+				<div className="links-container">
 					<Link
 						to="/"
 						className={
@@ -55,9 +62,12 @@ const Navigation = ({selected}) => {
 						Contact
 					</Link>
 				</div>
-			</div>
-		</>
-  )
+			) : (
+				<div className="links-container"></div>
+			)}
+		</div>
+	)
 }
 
+window.addEventListener('resize', () => listener())
 export default Navigation

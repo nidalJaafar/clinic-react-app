@@ -1,7 +1,3 @@
-$mainColor: #0ba39c;
-$blackColor: black;
-$hoverColor: #1cc4bc;
-
 .nav-container {
 	display: flex;
 	padding: 1em;
@@ -24,29 +20,29 @@ $hoverColor: #1cc4bc;
 
 .nav-link {
 	text-decoration: none;
-	color: $blackColor;
+	color: black;
 	font-size: 1.2rem;
 	font-weight: bold;
-	padding: 0.5rem 2rem;
+	padding: .5rem 2rem;
 	text-transform: uppercase;
 	font-family: Poppins;
 
 	&:hover {
-		color: $hoverColor;
+		color: #1cc4bc;
 	}
 }
 
 .selected {
-	color: $hoverColor;
+	color: #1cc4bc;
 }
 
 .mobile-menu {
 	display: none;
 }
 
+
 @media screen and (max-width: 479px) {
 	.links-container {
-		display: none;
 		flex-direction: column;
 	}
   .show {

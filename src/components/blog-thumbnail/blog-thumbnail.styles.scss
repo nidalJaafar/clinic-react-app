@@ -1,10 +1,7 @@
-$whiteColor: white;
-$blackColor: black;
-
 .blog-thumbnail-image {
 	max-width: 400px;
 	width: 100%;
-	border: 1px solid $blackColor;
+	border: 1px solid black;
 }
 
 .blog-thumbnail-container {
@@ -13,7 +10,7 @@ $blackColor: black;
 }
 
 .blog-thumbnail-content {
-	border: 1px solid $blackColor;
+	border: 1px solid black;
 	border-left: 0px;
 	width: 35em;
 	max-height: 30em;
@@ -25,20 +22,20 @@ $blackColor: black;
 
 .blog-thumbnail-link {
 	text-decoration: none;
-	color: $blackColor;
+	color: black;
 	font-family: Poppins;
 	font-weight: bold;
 	font-size: 1.2em;
 	padding: 0.5em;
 	margin-bottom: 0.5em;
-	color: $whiteColor;
-	background-color: $blackColor;
-	border: 3px solid $blackColor;
+	color: white;
+	background-color: black;
+	border: 3px solid black;
 	text-transform: uppercase;
 
 	&:hover {
-		color: $blackColor;
-		background-color: $whiteColor;
+		color: black;
+		background-color: white;
 	}
 }
 

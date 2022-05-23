@@ -1,6 +1,3 @@
-$whiteColor: white;
-$blackColor: black;
-
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -12,8 +9,8 @@ $blackColor: black;
   text-transform: uppercase;
   margin-top: 0;
   padding: .5em;
-  color: $whiteColor;
-  background-color: $blackColor;
+  color: white;
+  background-color: black;
 }
 
 .contact-form {
@@ -28,7 +25,7 @@ $blackColor: black;
   padding: .5em;
   font-size: 1em;
   margin-bottom: 1em;
-  min-width: 35em;
+  min-width: 85vmin;
 }
 
 .form-message {
@@ -37,20 +34,20 @@ $blackColor: black;
 }
 
 .form-send {
-  color: $blackColor;
+  color: black;
   font-family: Poppins;
   font-weight: bold;
   font-size: 1.2em;
   padding: .5em;
   margin-bottom: .5em;
-  color: $whiteColor;
-  background-color: $blackColor;
-  border: 3px solid $blackColor;
+  color: white;
+  background-color: black;
+  border: 3px solid black;
   text-transform: uppercase;
   
   &:hover {
-    color: $blackColor;
-    background-color: $whiteColor;
+    color: black;
+    background-color: white;
     cursor: pointer;
   }
 }

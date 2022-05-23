@@ -1,4 +1,3 @@
-$mainColor: #0ba39c;
 @mixin inline {
 	display: inline-block;
 	height: 50px;
@@ -20,7 +19,7 @@ $mainColor: #0ba39c;
   a {
     font-family: Lora;
     text-decoration: none;
-    color: $mainColor;
+    color: #0ba39c;
   }
 }
 

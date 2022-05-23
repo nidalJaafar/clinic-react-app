@@ -15,7 +15,7 @@ const Contact = () => {
 					/>
 					<input
 						required
-						type="text"
+						type="email"
 						placeholder="email"
 						className="form-field"
 					/>
